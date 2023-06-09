@@ -24,7 +24,7 @@ function ArtistInput() {
                 temperature: 1
             })
         }
-        fetch('http://localhost:3001/api/completions', options)
+        fetch(process.env.REACT_APP_API_ENDPOINT, options)
             .then(response => response.json())
             .then(data => setApiResponse(data.choices[0].text))
             .then(() => { setLoading(false); setArtist(""); setName(""); setQualities("") })
