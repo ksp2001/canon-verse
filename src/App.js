@@ -4,10 +4,8 @@ import "./index.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header p-0 m-0">
-        <ArtistInput />
-      </header>
+    <div className="w-full h-screen flex bg-gradient-to-b from-neutral-900 to-neutral-950 justify-center">
+      <ArtistInput />
     </div>
   );
 }
