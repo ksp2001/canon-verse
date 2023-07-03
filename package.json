@@ -23,7 +23,7 @@
     "tailwind": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
     "start": "npm run server && npm run tailwind && react-scripts start",
     "startTest": "npm run tailwind && react-scripts start",
-    "build": "npm run server && npm run tailwind && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
